@@ -19,7 +19,7 @@ export default function HomeScreen() {
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Músicas parecidas</ThemedText>
+        <ThemedText type="subtitle">Músicas</ThemedText>
         <ThemedText>
           Crie uma playlist com base na sua música favorita.
         <ThemedText type="defaultSemiBold">
@@ -31,9 +31,9 @@ export default function HomeScreen() {
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
+        <ThemedText type="subtitle">Cantores</ThemedText>
         <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
+          Encontre artistas que refletem seu estilo.
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
@@ -70,3 +70,4 @@ const styles = StyleSheet.create({
     height: '100%',
   },
 });
+
