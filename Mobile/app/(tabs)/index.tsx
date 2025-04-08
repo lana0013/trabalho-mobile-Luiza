@@ -11,17 +11,19 @@ export default function HomeScreen() {
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
       headerImage={
         <Image
-          source={require('@/assets/images/logo.png')}
+          source={require('@/assets/images/solarsystem.png')}
           style={styles.reactLogo}
         />
       }>
       <ThemedView style={styles.titleContainer}>
         <HelloWave />
+      <ThemedText type="title">Universo</ThemedText>
+        <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Músicas</ThemedText>
+        <ThemedText type="subtitle">Espaço Sideral</ThemedText>
         <ThemedText>
-          Crie uma playlist com base na sua música favorita.
+        Região do Universo que não é ocupada por corpos celestes, sendo um ambiente próximo do vácuo perfeito, sem atrito, o que permite que estrelas, planetas e satélites se movimentem livremente. 
         <ThemedText type="defaultSemiBold">
             {Platform.select({
               ios: 'cmd + d',
@@ -31,13 +33,14 @@ export default function HomeScreen() {
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Cantores</ThemedText>
+        <ThemedText type="subtitle">Corpos Celestes</ThemedText>
         <ThemedText>
-          Encontre artistas que refletem seu estilo.
+        Todos os objetos que existem no espaço sideral, como estrelas, planetas, asteroides, cometas, meteoritos, satélites naturais e artificiais
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
+        <ThemedText type="subtitle">Sistema Solar</ThemedText>
+        <ThemedText>Conjunto de corpos celestes que orbitam o Sol, a estrela central do sistema. É composto por planetas, planetas anões, asteroides, cometas, meteoroides, luas e outros. </ThemedText>
         <ThemedText>
           When you're ready, run{' '}
           <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
@@ -49,6 +52,8 @@ export default function HomeScreen() {
     </ParallaxScrollView>
   );
 }
+
+
 
 const styles = StyleSheet.create({
   titleContainer: {
