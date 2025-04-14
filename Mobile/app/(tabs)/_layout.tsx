@@ -7,6 +7,9 @@ import { IconSymbol } from '@/components/ui/IconSymbol';
 import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import Feather from '@expo/vector-icons/Feather';
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -29,16 +32,25 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          title: 'Universo',
+          tabBarIcon: ({ color }) => <FontAwesome5 name="squarespace" size={24} color="black" />,
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="corposceleste"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'Corpos Celestes',
+          tabBarIcon: ({ color }) => <FontAwesome6 name="meteor" size={24} color="black" />,
         }}
+        
+      />
+      <Tabs.Screen
+        name="sistemasolar"
+        options={{
+          title: 'Sistema Solar',
+          tabBarIcon: ({ color }) => <Feather name="sun" size={24} color="black" />,
+        }}
+        
       />
     </Tabs>
   );

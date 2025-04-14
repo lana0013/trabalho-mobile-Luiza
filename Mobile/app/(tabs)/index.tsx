@@ -49,13 +49,6 @@ export default function HomeScreen() {
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Sistema Solar</ThemedText>
         <ThemedText>Conjunto de corpos celestes que orbitam o Sol, a estrela central do sistema. É composto por planetas, planetas anões, asteroides, cometas, meteoroides, luas e outros. </ThemedText>
-        <ThemedText>
-          When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
       </ThemedView>
       
       {/* Adicionando o botão aqui */}
@@ -88,7 +81,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   buttonText: {
-    color: '#FFFFFF', // Cor do texto do botão
+    color: '#FFFFFF',
     fontSize: 16,
   },
   reactLogo: {
