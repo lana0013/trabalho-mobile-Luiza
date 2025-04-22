@@ -5,8 +5,8 @@ import { ExternalLink } from '@/components/ExternalLink';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import { HelloWave } from '@/components/HelloWave';
 
-// Tipos para a API
 type CelestialBody = {
   id: string;
   name: string;
@@ -30,7 +30,6 @@ export default function CelestialBodiesScreen() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Dados estáticos sobre corpos celestes
   const celestialBodies: CelestialBody[] = [
     {
       id: '1',
@@ -69,7 +68,6 @@ export default function CelestialBodiesScreen() {
     }
   ];
 
-  // Buscar dados da API APOD da NASA
   useEffect(() => {
     const fetchAPOD = async () => {
       try {
@@ -97,10 +95,11 @@ export default function CelestialBodiesScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Explorando o Cosmos</ThemedText>
+        <HelloWave />
+        <ThemedText type="title">Corpos Celestes</ThemedText>
+        <HelloWave />
       </ThemedView>
 
-      {/* Seção da API APOD */}
       <Collapsible title="Imagem Astronômica do Dia (NASA APOD)" initiallyExpanded={true}>
         {loading ? (
           <ActivityIndicator size="large" color="#0A3D91" />
@@ -119,7 +118,6 @@ export default function CelestialBodiesScreen() {
             ) : (
               <ThemedText>O conteúdo de hoje é um vídeo. Assista no site da NASA.</ThemedText>
             )}
-            <ThemedText style={styles.explanationText}>{apodData.explanation}</ThemedText>
             <ExternalLink href="https://apod.nasa.gov/apod/astropix.html">
               <ThemedText type="link">Ver no site da NASA</ThemedText>
             </ExternalLink>
@@ -127,7 +125,6 @@ export default function CelestialBodiesScreen() {
         ) : null}
       </Collapsible>
 
-      {/* Seção de Corpos Celestes */}
       <Collapsible title="Principais Corpos Celestes" initiallyExpanded={true}>
         <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.horizontalScroll}>
           {celestialBodies.map((body) => (
@@ -149,7 +146,6 @@ export default function CelestialBodiesScreen() {
         </ScrollView>
       </Collapsible>
 
-      {/* Seção de Curiosidades */}
       <Collapsible title="Curiosidades Astronômicas">
         <ThemedText>
           - O universo observável tem aproximadamente 93 bilhões de anos-luz de diâmetro.
@@ -165,7 +161,6 @@ export default function CelestialBodiesScreen() {
         </ThemedText>
       </Collapsible>
 
-      {/* Seção de Links Úteis */}
       <Collapsible title="Recursos para Explorar">
         <ExternalLink href="https://www.nasa.gov">
           <ThemedText type="link">Site Oficial da NASA</ThemedText>
@@ -195,8 +190,9 @@ const styles = StyleSheet.create({
     height: '100%',
   },
   titleContainer: {
+    flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 20,
+    gap: 8,
   },
   apodImage: {
     width: '100%',

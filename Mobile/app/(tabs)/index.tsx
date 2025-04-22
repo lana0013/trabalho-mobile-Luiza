@@ -1,5 +1,4 @@
 import { Linking, Image, StyleSheet, Platform, TouchableOpacity, Alert } from 'react-native';
-
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
@@ -7,7 +6,7 @@ import { ThemedView } from '@/components/ThemedView';
 
 export default function HomeScreen() {
   const handleButtonPress = () => {
-    const url = 'https://science.nasa.gov/universe/'; // Substitua pela URL que você deseja abrir
+    const url = 'https://science.nasa.gov/universe/'; 
     Linking.openURL(url).catch((err) => {
       console.error("Erro ao abrir a URL:", err);
       Alert.alert('Erro', 'Não foi possível abrir a URL.');
@@ -72,10 +71,10 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   buttonContainer: {
-    margin: 16, // Adiciona margem ao redor do botão
+    margin: 16, 
   },
   button: {
-    backgroundColor: '#007BFF', // Cor de fundo do botão
+    backgroundColor: '#007BFF', 
     padding: 10,
     borderRadius: 5,
     alignItems: 'center',
