@@ -10,7 +10,6 @@ import { HelloWave } from '@/components/HelloWave';
 type CelestialBody = {
   id: string;
   name: string;
-  type: string;
   description: string;
   imageUrl?: string;
 };
@@ -33,38 +32,45 @@ export default function CelestialBodiesScreen() {
   const celestialBodies: CelestialBody[] = [
     {
       id: '1',
-      name: 'Sol',
-      type: 'Estrela',
-      description: 'O Sol é a estrela central do nosso sistema solar, responsável por fornecer luz e calor que possibilitam a vida na Terra.',
+      name: 'Estrelas',
+      description: 'São corpos celestes que emitem luz própria, como o Sol.',
       imageUrl: 'https://images-assets.nasa.gov/image/PIA03149/PIA03149~thumb.jpg'
     },
     {
       id: '2',
-      name: 'Lua',
-      type: 'Satélite Natural',
-      description: 'A Lua é o único satélite natural da Terra e o quinto maior do Sistema Solar. Ela influencia as marés e a estabilidade do eixo de rotação da Terra.',
+      name: 'Satélites',
+      description: 'São corpos celestes que orbitam um planeta, como a Lua. ',
       imageUrl: 'https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001982/GSFC_20171208_Archive_e001982~orig.jpg'
     },
     {
       id: '3',
-      name: 'Marte',
-      type: 'Planeta',
-      description: 'Marte é o quarto planeta a partir do Sol, conhecido como "Planeta Vermelho" devido ao óxido de ferro em sua superfície. É um dos principais alvos da exploração espacial.',
-      imageUrl: 'https://images-assets.nasa.gov/image/PIA00407/PIA00407~thumb.jpg'
+      name: 'Planetas',
+      description: 'São corpos celestes que orbitam uma estrela, como a Terra. ',
+      imageUrl: 'http://images-assets.nasa.gov/image/PIA14886/PIA14886~orig.jpg'
     },
     {
       id: '4',
-      name: 'Júpiter',
-      type: 'Planeta Gasoso',
-      description: 'Júpiter é o maior planeta do Sistema Solar, com uma massa duas vezes maior que a de todos os outros planetas juntos. Possui um sistema de anéis e mais de 70 luas conhecidas.',
-      imageUrl: 'https://images-assets.nasa.gov/image/PIA00343/PIA00343~thumb.jpg'
+      name: 'Asteroides',
+      description: 'São corpos celestes rochosos que orbitam o Sol.',
+      imageUrl: 'https://images-assets.nasa.gov/image/PIA24472/PIA24472~orig.jpg'
     },
     {
       id: '5',
-      name: 'Asteroide',
-      type: 'Objeto Rochoso',
-      description: 'Asteroides são pequenos objetos rochosos que orbitam o Sol. Embora orbitem o Sol como planetas, eles são muito menores que os planetas. Existem muitos asteroides em nosso sistema solar.',
-      imageUrl: 'https://images-assets.nasa.gov/image/PIA24472/PIA24472~orig.jpg'
+      name: 'Cometas',
+      description: 'Corpos celestes gelados que, perto do Sol, liberam gases e poeira.',
+      imageUrl: 'https://images-assets.nasa.gov/image/PIA18641/PIA18641~orig.jpg'
+    },
+    {
+      id: '6',
+      name: 'Meteoros',
+      description: 'Fragmentos de rocha e metal que entram na atmosfera da Terra.',
+      imageUrl: 'https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar/bosf/images/1-3-leonid-danielsen1.jpeg?w=768&h=512&fit=clip&crop=faces%2Cfocalpoint'
+    },
+    {
+      id: '7',
+      name: 'Meteoritos',
+      description: 'Meteoros que conseguem alcançar a superfície da Terra.',
+      imageUrl: 'https://images-assets.nasa.gov/image/PIA07269/PIA07269~orig.jpg'
     }
   ];
 
@@ -137,7 +143,6 @@ export default function CelestialBodiesScreen() {
                 />
               )}
               <ThemedText type="defaultSemiBold">{body.name}</ThemedText>
-              <ThemedText style={styles.typeText}>{body.type}</ThemedText>
               <ThemedText numberOfLines={3} style={styles.descriptionText}>
                 {body.description}
               </ThemedText>
@@ -223,11 +228,6 @@ const styles = StyleSheet.create({
     height: 100,
     borderRadius: 4,
     marginBottom: 8,
-  },
-  typeText: {
-    fontSize: 12,
-    color: '#666',
-    marginBottom: 5,
   },
   descriptionText: {
     fontSize: 12,
