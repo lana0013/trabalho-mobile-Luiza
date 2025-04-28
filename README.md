@@ -61,26 +61,7 @@ O aplicativo Universo é um aplicativo móvel desenvolvido em React Native que o
   - Imagens otimizadas
   - Estilização consistente com as outras telas
 
-## Componentes Personalizados
-O aplicativo utiliza vários componentes customizados para manter consistência visual e funcional:
-
-- **HelloWave**: Componente de saudação animado
-- **ThemedText**: Texto com estilos temáticos pré-definidos (título, subtítulo, etc.)
-- **ThemedView**: Container com estilo temático
-- **ParallaxScrollView**: ScrollView com efeito parallax para a imagem de cabeçalho
-- **Collapsible**: Seção expansível/colapsável para organizar conteúdo
-- **ExternalLink**: Componente para links externos com estilo consistente
-
-## Estilos e Temas
-O aplicativo utiliza StyleSheet para estilização, com:
-- Estilos consistentes para títulos, subtítulos e texto normal
-- Imagens responsivas
-- Layout flexível para diferentes tamanhos de tela
-
 ## Dependências Principais
 - React Native
 - React Navigation (para navegação entre telas)
 - API da NASA (para a imagem astronômica do dia)
-
-## Licença
-[MIT License] - Consulte o arquivo LICENSE para mais detalhes.
