@@ -84,3 +84,11 @@ O aplicativo utiliza StyleSheet para estilização, com:
 
 ## Licença
 [MIT License] - Consulte o arquivo LICENSE para mais detalhes.
+
+![Imagem do App](mobile/assets/images/print.png)  
+![Imagem do App](mobile/assets/images/print2.png)  
+![Imagem do App](mobile/assets/images/print3.png)  
+![Imagem do App](mobile/assets/images/print4.png)  
+![Imagem do App](mobile/assets/images/print5.png)  
+![Imagem do App](mobile/assets/images/print6.png)
+
