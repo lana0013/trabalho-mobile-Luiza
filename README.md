@@ -19,6 +19,8 @@ O aplicativo Universo é um aplicativo móvel desenvolvido em React Native que o
   - ParallaxScrollView para efeito visual
   - Linking para abrir URLs externas
 
+  ![Imagem do App](/Mobile/assets/images/print.png)  
+
 ### 2. CelestialBodiesScreen (Corpos Celestes)
 - **Conteúdo**: Detalha diversos tipos de corpos celestes com imagens e descrições.
 - **Recursos**:
@@ -38,6 +40,13 @@ O aplicativo Universo é um aplicativo móvel desenvolvido em React Native que o
   - Collapsible para seções expansíveis
   - ScrollView horizontal para a galeria
   - Componente ExternalLink
+
+  
+![Imagem do App](/Mobile/assets/images/print2.png)  
+![Imagem do App](/Mobile/assets/images/print3.png)  
+![Imagem do App](/Mobile/assets/images/print4.png)  
+![Imagem do App](/Mobile/assets/images/print5.png)  
+![Imagem do App](/Mobile/assets/images/print6.png)
 
 ### 3. SolarSystemScreen (Sistema Solar)
 - **Conteúdo**: Informações detalhadas sobre cada planeta do nosso sistema solar.
@@ -68,11 +77,4 @@ O aplicativo Universo é um aplicativo móvel desenvolvido em React Native que o
 
 ## Licença
 [MIT License] - Consulte o arquivo LICENSE para mais detalhes.
-
-![Imagem do App](mobile/assets/images/print.png)  
-![Imagem do App](mobile/assets/images/print2.png)  
-![Imagem do App](mobile/assets/images/print3.png)  
-![Imagem do App](mobile/assets/images/print4.png)  
-![Imagem do App](mobile/assets/images/print5.png)  
-![Imagem do App](mobile/assets/images/print6.png)
 
